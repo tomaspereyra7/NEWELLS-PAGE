@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto - Tienda Newells</title>
+</head>
+<body class="futbol">
+    <header>
+        <a href="../PAGINA-NEWELLS/index.html"
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo de Tienda Newells">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="../PAGINA-NEWELLS/index.html">Inicio</a></li>
+                <li><a href="../PAGINA-NEWELLS/futbol.html">Fútbol</a></li>
+                <li><a href="../PAGINA-NEWELLS/moda.html">Moda</a></li>
+                <li><a href="../PAGINA-NEWELLS/buyperplayer.html">Comprar por jugador</a></li>
+                <li><a href="../PAGINA-NEWELLS/contacto.html">Contacto</a></li>
+            </ul>
+            <a href="../PAGINA-NEWELLS/carrito.html" class="cart-link">
+                <div class="cart">
+                    <img src="imagenes/carrito.png" alt="Carrito-compras">
+                </div>
+                </a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>TU CARRITO</h1>
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Talles</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>Camiseta Titular 2023</td>
+                <td>$25,000</td>
+                <td>
+                    <select>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </td>
+                <td>1</td>
+                <td>$25,000</td>
+            </tr>
+        </table>
+    
+        <div id="coupon">
+            <label for="coupon-code">Código de cupón</label>
+            <input type="text" id="coupon-code" name="coupon-code">
+            <button type="submit">APLICAR CUPÓN</button>
+        </div>
+    
+        <div id="shipping">
+            <p>¿Cómo desea recibir su pedido?</p>
+            <button id="pickup">Retiro gratuito en Tienda Parque Independencia</button>
+            <button id="delivery-address">Envío a casa</button>
+            <div id="address" style="display: none;">
+                <label for="address-input">Dirección:</label>
+                <input type="text" id="address-input" name="address-input">
+            </div>
+        </div>
+    
+        <div id="totals">
+            <p>Subtotal $25,000.00</p>
+            <p>Total $25,000.00</p>
+        </div>
+    
+        <button id="checkout">FINALIZAR COMPRA</button>
+        <script>
+            var deliveryAddressButton = document.getElementById("delivery-address");
+            var addressDiv = document.getElementById("address");
+    
+            deliveryAddressButton.addEventListener("click", function() {
+                addressDiv.style.display = "block";
+            });
+        </script>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;FOOTER TEXTO</p>
+    </footer>
+</body>
+
+</html>
