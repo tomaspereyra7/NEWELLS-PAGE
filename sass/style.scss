@@ -346,3 +346,27 @@ button:hover {
 	color: white;
 }
 
+//*footer*//
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.large-text {
+    font-size: 1.2em;
+}
+
