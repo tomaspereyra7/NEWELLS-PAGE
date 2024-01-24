@@ -1,0 +1,5 @@
+@mixin flex($dplay:flex,$jc:center,$al:center){
+    display: $dplay;
+    justify-content: $jc;
+    align-items: $al;
+}
